@@ -1,0 +1,10 @@
+version: 3.7
+services:
+  api:
+    container_name: nest_api
+    image: nest_clound_run:0.0.1
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      - PORT=3000
